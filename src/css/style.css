@@ -24,6 +24,7 @@ body
     max-width: 73rem;
     margin: 2.5rem;
     border-radius: 1rem;
+    box-shadow: 1rem 1rem 2rem -0.5rem var(--Neutral);
 }
 
 .card .image-container 
