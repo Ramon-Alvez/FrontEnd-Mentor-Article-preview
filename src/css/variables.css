@@ -1,0 +1,16 @@
+:root {
+    /* ## Colors */
+
+    --TitleAndActiveState: hsl(217, 19%, 35%);
+    --TextAndMediaHoverEffect: hsl(214, 17%, 51%);
+    --Neutral: hsl(212, 23%, 69%);
+    --BgAndButtonColor: hsl(210, 46%, 95%);
+
+    /* ## Typography */
+
+    /* ### Body Copy */
+
+    --FontSize: 1.3rem;
+    --LetterSpacing: 0.026rem;
+    --ButtonSize: 3.3rem;
+}

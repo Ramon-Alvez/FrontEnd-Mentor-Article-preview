@@ -1,36 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Article preview component</title>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsivity.css" />
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+    <style>
 
-  Michelle Appleton
-  28 Jun 2020
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <header class="image-container">
+        <img
+          class="header-image"
+          src="./src/images/drawers.jpg"
+          alt="Drawers image"
+        />
+      </header>
 
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <article class="article-container">
+        <h1 class="title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="article-preview">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+
+        <section class="post-info">
+          <div class="info-container">
+            <div class="avatar">
+              <img
+                src="./src/images/avatar-michelle.jpg"
+                alt="Michelle Appleton"
+              />
+            </div>
+            <div class="profile-info">
+              <h2 class="pub-autor">Michelle Appleton</h2>
+              <p class="pub-date">28 Jun 2020</p>
+            </div>
+          </div>
+
+          <button class="share-bttn"></button>
+        </section>
+
+        <section class="share hidden">
+          <div class="share-container">
+            <h3>Share</h3>
+            <ul class="media-container">
+              <li class="media">
+                <a href="#">
+                  <img 
+                    src="./src/images/icon-facebook.svg" 
+                    alt="Facebook icon" />
+                </a>
+              </li>
+
+              <li class="media">
+                <a href="#">
+                  <img 
+                    src="./src/images/icon-twitter.svg" 
+                    alt="Twitter icon" />
+                </a>
+              </li>
+
+              <li class="media">
+                <a href="#">
+                  <img
+                    src="./src/images/icon-pinterest.svg"
+                    alt="Pinterest icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/ramon-alvez/" target="_blank">Ramon Alves</a>.
+      </p>
+    </footer>
+  </body>
 </html>

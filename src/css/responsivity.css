@@ -1,0 +1,66 @@
+@media (min-width: 426px) and (max-width: 899px) {
+    .card
+    {
+        width: 37.5rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card 
+    {
+        display: flex;
+        min-height: 28rem;
+    }
+
+    .card .image-container 
+    {
+        height: 100%;
+        overflow-y: visible;
+    }
+
+    .card .header-image 
+    {
+        width: 28.5rem;
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+        object-position: 0 0;
+    }
+
+    .card .article-container { padding: 3.5rem 4rem }
+
+    .card .article-container .title 
+    { 
+        font-size: 2rem; 
+        line-height: 2.7rem;
+    }
+    
+    .card .article-container .article-preview { margin-bottom: 2rem; }
+
+    /* Active State */
+    .share
+    {
+        width: 25rem;
+        height: 5.5rem;
+        bottom: 10.3rem;
+        right: calc(-12.5rem + 4rem + 1.65rem);
+        padding: 0;
+        padding-left: 4rem;
+        border-radius: 1rem;
+        
+            &::before {
+            content: '';
+            background-color: var(--TitleAndActiveState);
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transform: translateY(50%) rotate(45deg);
+        }
+    }
+    .share .share-container {
+        z-index: 1;
+    }
+}
