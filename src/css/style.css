@@ -107,12 +107,14 @@ body
     z-index: 1;
 }
 
-.card .share-bttn:hover
+.card .share-bttn:hover,
+.card .share-bttn.active
 {
     background: url(../images/icon-share-hover.svg) no-repeat center center;
     background-color: var(--Neutral);
     transition: 0.2s ease-in;
 }
+
 
 /* Active State Style */
 .share
